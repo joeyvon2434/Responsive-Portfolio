@@ -1,0 +1,231 @@
+/*Main style sheet for portfolio */
+
+
+
+/* set all fonts to those listed below */
+
+* {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+/* Set headings to the fonts listed below */
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+
+/* add in the background pattern */
+
+body {
+    position: relative;
+    background-image: url("../images/escheresque/escheresque.png");
+}
+
+/* style the header bar */
+
+#header-bar {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #cccccc;
+
+}
+
+#center-header {
+    width: 960px;
+    height: auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-name {
+    background-color: #4aaaa5;
+    margin: 0;
+    width: 30%;
+    height: 36px;
+    padding: 22px 0;
+    font-size: 23px;
+    float: left;
+    color: #ffffff;
+}
+
+#nav-links{
+    float: right;
+    list-style-type: none;
+    height: auto;
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+.link-items {
+    display: inline;
+    color: #777777;
+    padding: 0 5px;
+    cursor: pointer;
+
+}
+
+.link-border{
+    border-width: 0 1px 0 0;
+    border-color: #777777;
+    border-style: solid;
+}
+
+
+/*style the content sections*/
+
+section{
+    z-index: 0;
+    position: relative;
+    top: 96px;
+    width: 960px;
+    padding:0;
+    margin: 23px auto 96px auto;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+.content-header {
+    color: #4aaaa5;
+    margin: 20px 20px 10px 20px;
+    padding: 20px 0;
+    border-width: 0 0 1px 0;
+    border-color: #777777;
+    border-style: solid;
+}
+
+#profile-image {
+    float: left;
+    width: 250px;
+    height: auto;
+}
+
+#slogan {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.content{
+    line-height: 2.0;
+    margin: 10px 20px 20px 20px;
+    color: #777777;
+    padding: 0;
+    list-style-position: inside;
+}
+
+#ski-image{
+    float: right;
+    width: 450px;
+    height: auto;
+
+}
+
+#travel-image{
+    float: left;
+    width: 300px;
+    height: auto;
+
+}
+
+.clickable-project {
+    position: relative;
+    display: inline-block;
+    width: 270px;
+    height: 180px;
+    padding: 0;
+    margin: 20px;
+}
+
+.project-banners{
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    margin: 0;
+    width: 270px;
+    height: 40px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+.project-image{
+    position: absolute;
+    z-index: 0;
+}
+
+form {
+    color: #777777;
+    padding: 10px 20px;
+}
+
+input{
+    width: 920px;
+    height: 30px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+textarea {
+    width: 920px;
+    height: 180px;
+    margin: 10px 0;
+}
+
+button{
+    background-color: #4aaaa5;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    margin: 0 20px 20px 20px;
+    color: #ffffff;
+
+}
+
+
+/* Styling Footer */
+
+
+
+footer {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    background-color: #666666;
+    color: #ffffff;
+    border-width: 5px 0 0 0 ;
+    border-color: #4aaaa5;
+    border-style: solid;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.footdiv {
+    position: absolute;
+    margin-top: 50px;
+    bottom: 0;
+    left: 50%;
+}
