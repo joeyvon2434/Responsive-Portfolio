@@ -260,17 +260,24 @@ footer {
     }    
     section {
         top: 60px;
-        width: 588px;
+        width: 620px;
         padding: 0;
         margin: 60px auto 60px 12px;
        
+    }
+    .clickable-project {
+        margin: 15px;
+        padding: 0px;
     }
 
 }
 
 @media screen and (max-width: 768px) {
     #header-bar {
-        height: 50px;
+        height: 40px;
+        position: static;
+        margin: 0;
+        padding: 0;
     }
 
     #center-header {
@@ -284,8 +291,56 @@ footer {
     #header-name {
         width: 35%;
         height: 20px;
+        padding: 11px 0;
+        font-size: 18px;
+        
+    }
+
+    #nav-links{
+       
+        padding: 10px 0;
+        font-size: 12px;
+    }    
+    section {
+        position: static;
+        width: 95%;
+        padding: 0;
+        margin: 10px auto 10px auto;
+       
+    }
+
+.clickable-project {
+    margin: 10px;
+    padding: 0px;
+}
+
+    .content-header {
+        margin: 8px 16px 8px 16px;
+        padding: 8px 0;
+        font-size: 18px;
+       
+    }
+}
+
+@media screen and (max-width:640px) {
+    #header-bar {
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #center-header {
+        height: auto;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #header-name {
+        width: 35%;
         padding: 15px 0;
-        font-size: 20px;
+        font-size: 12px;
         
     }
 
@@ -308,8 +363,24 @@ footer {
         font-size: 20px;
        
     }
-}
 
-@media screen and (max-width:640px) {
+    footer {
+        z-index: 2;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footdiv {
+        position: absolute;
+        margin-top: 40px;
+        bottom: 0;
+        left: 50%;
+    }
 
 }
