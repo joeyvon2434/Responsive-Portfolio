@@ -178,14 +178,14 @@ form {
 }
 
 input{
-    width: 920px;
+    width: 95%;
     height: 30px;
     margin: 10px 0;
     font-size: 20px;
 }
 
 textarea {
-    width: 920px;
+    width: 95%;
     height: 180px;
     margin: 10px 0;
 }
