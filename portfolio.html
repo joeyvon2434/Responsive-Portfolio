@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
 
-        <title>Joseph Von Edwins</title>
-        <meta charset="UTF-8">
+<head>
+    <title>Joseph Von Edwins</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-        <link rel="stlyesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-    </head>
+<body>
 
-    <body>
+    <!--wrapper to allow sticky footer-->
+    <div id="wrapper">
 
-        <!--Header br section, contains name and nav bar-->
+        <!--Header-->
 
-        <div id="header-bar">
-            <div id="center-header">
-    
-                <h1 id="header-name">Joseph Von Edwins</h1>
-    
-                <ul id="nav-links">
-                    <li class="link-items link-border" onclick="location.href='index.html'">About</li>
-                    <li class="link-items link-border" onclick="location.href='portfolio.html'">Portfolio</li>
-                    <li class="link-items link-border" onclick="location.href='detailed_bio.html'">Detailed Bio</li>
-                    <li class="link-items" onclick="location.href='contact.html';">Contact</li>
+        <div class="header">
+
+            <!--Input header contents into the div below-->
+            <div id="headerContent">
+                <h1 id="mainHeader">Joseph Von Edwins</h1>
+                
+                <!--Navigation-->
+                <ul id="navigation">
+                    <li class="linkItem navItem" onclick="location.href='index.html'">About Me</li>
+                    <li class="linkItem navItem" onclick="location.href='portfolio.html'">Portfolio</li>
+                    <li class="linkItem navItem" onclick="location.href='detailed-bio.html'">Detailed Bio</li>
+                    <li class="linkItem" onclick="location.href='contact.html'">Contact</li>
                 </ul>
-    
-            </div>
-        </div>
-    
 
-        <!--Portfolio Section-->
+            </div>
+
+        </div>
+
+        <div id="displacementHeader"></div>
+
+        <!--End header-->
 
         <section>
-            <h1 class="content-header">Portfolio</h1>
+            <!--Section Header-->
+            <div class="sectionContent">
+                <h2>Portfolio</h2>
+            </div>
 
-            <!--project positioning uses ids and follows the rule "project-row-column-row"-->
+            <div class="sectionContent" >
+        
+                <div id="pictureBox">
+                    
+                    <div class="projectBox">
+                            <img class="projectImage" src="https://picsum.photos/270/180" alt="Trivia Game Picture">
+                            <div class="projectBanner">Project 1</div>
+                    </div>    
 
-             <a class="clickable-project content" href="##Place-holder-linnk##"> <!--Input link when project is complete-->
-                 <div>
-                     <img class="project-image" src="http://lorempixel.com/270/180/cats" alt="Hangman Game Picture"> 
-                     <div class="project-banners">Hangman</div>
+                    <div class="projectBox">
+                            <img class="projectImage" src="https://picsum.photos/270/180" alt="Trivia Game Picture">
+                            <div class="projectBanner">Project 2</div>
+                    </div>   
+
+                    <div class="projectBox">
+                            <img class="projectImage" src="https://picsum.photos/270/180" alt="Trivia Game Picture">
+                            <div class="projectBanner">Project 3</div>
+                    </div>   
+
+                    <div class="projectBox">
+                            <img class="projectImage" src="https://picsum.photos/270/180" alt="Trivia Game Picture">
+                            <div class="projectBanner">Project 4</div>
+                    </div>    
+
+                    <div class="projectBox">
+                            <img class="projectImage" src="https://picsum.photos/270/180" alt="Trivia Game Picture">
+                            <div class="projectBanner">Project 5</div>
+                    </div>   
+
+                    <div class="projectBox">
+                            <img class="projectImage" src="https://picsum.photos/270/180" alt="Trivia Game Picture">
+                            <div class="projectBanner">Project 6</div>
+                    </div>   
+
+
                 </div>
-             </a>
 
-             <a class="clickable-project content" href="##Place-holder-linnk##"> <!--Input link when project is complete-->
-                <div>
-                     <img class="project-image" src="http://lorempixel.com/270/180/cats" alt="RPG Game Picture"> 
-                     <div class="project-banners">RPG Game</div>
-               </div>
-             </a>
+            </div>
 
-             <a class="clickable-project content" href="##Place-holder-linnk##"> <!--Input link when project is complete-->
-                 <div>
-                     <img class="project-image" src="http://lorempixel.com/270/180/cats" alt="Trivia Game Picture"> 
-                     <div class="project-banners">Trivia Game</div>
-                 </div>
-             </a>
-
-             <a class="clickable-project content" href="##Place-holder-linnk##"> <!--Input link when project is complete-->
-                 <div>
-                     <img class="project-image" src="http://lorempixel.com/270/180/cats" alt="UCF Info Picture"> 
-                     <div class="project-banners">UCF Info Widget</div>
-                 </div>
-             </a>
-
-             <a class="clickable-project content" href="##Place-holder-linnk##"> <!--Input link when project is complete-->
-                 <div>
-                     <img class="project-image" src="http://lorempixel.com/270/180/cats" alt="Rock Paper Scissors Game Picture"> 
-                     <div class="project-banners">Rock Paper Scissors</div>
-                 </div>
-             </a>
-
-             <a class="clickable-project content" href="##Place-holder-linnk##"> <!--Input link when project is complete-->
-                 <div>
-                     <img class="project-image" src="http://lorempixel.com/270/180/cats" alt="Future Project Picture"> 
-                     <div class="project-banners">Future Project</div>
-                 </div>
-            </a>
         </section>
 
-        <!--Footer Section-->
+        <footer>&copy; Copyright</footer>
 
-        <footer>
-                <div class="footdiv">&copy; Copyright</div>
-        </footer>
-
-    </body>
+    </div>
+</body>
 
 </html>

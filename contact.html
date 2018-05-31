@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
 
-        <title>Joseph Von Edwins</title>
-        <meta charset="UTF-8">
+<head>
+    <title>Joseph Von Edwins</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-        <link rel="stlyesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-    </head>
+<body>
 
-    <body>
-        
-        <!--Header bar section, contains name and nav bar-->
+    <!--wrapper to allow sticky footer-->
+    <div id="wrapper">
 
-        <div id="header-bar">
-            <div id="center-header">
-    
-                <h1 id="header-name">Joseph Von Edwins</h1>
-    
-                <ul id="nav-links">
-                    <li class="link-items link-border" onclick="location.href='index.html'">About</li>
-                    <li class="link-items link-border" onclick="location.href='portfolio.html'">Portfolio</li>
-                    <li class="link-items link-border" onclick="location.href='detailed_bio.html'">Detailed Bio</li>
-                    <li class="link-items" onclick="location.href='contact.html';">Contact</li>
+        <!--Header-->
+
+        <div class="header">
+
+            <!--Input header contents into the div below-->
+            <div id="headerContent">
+                <h1 id="mainHeader">Joseph Von Edwins</h1>
+                
+                <!--Navigation-->
+                <ul id="navigation">
+                    <li class="linkItem navItem" onclick="location.href='index.html'">About Me</li>
+                    <li class="linkItem navItem" onclick="location.href='portfolio.html'">Portfolio</li>
+                    <li class="linkItem navItem" onclick="location.href='detailed-bio.html'">Detailed Bio</li>
+                    <li class="linkItem" onclick="location.href='contact.html'">Contact</li>
                 </ul>
-    
+
             </div>
+
         </div>
 
-        <!--Contact Section-->
+        <div id="displacementHeader"></div>
+
+        <!--End header-->
 
         <section>
-            <h1 class="content-header">Contact</h1>
+            <!--Section Header-->
+            <div class="sectionContent">
+                <h2>Contact</h2>
+            </div>
 
-            <form> <!--Where should the contact inpute be sent-->
-                Name<br>
-                <input type="text" name="fullname"><br>
-                Email<br>
-                <input type="text" contact-email="contact-email"> <br>
-                Message<br>
-                <textarea></textarea>
-            </form>
+            <div class="sectionContent">
+                <div class="mainContent">
+                        <form> <!--Where should the contact inpute be sent-->
+                            Name<br>
+                            <input type="text" name="fullname"><br><br>
+                            Email<br>
+                            <input type="text" contact-email="contact-email"> <br><br>
+                            Message<br>
+                            <textarea></textarea>
+                        </form>
 
-            <button type="button">Submit</button>
+                </div>
+            </div>
 
         </section>
-    
 
-        <!--Footer Section-->
-    
-        <footer>
-                <div class="footdiv">&copy; Copyright</div>
-        </footer>
+        <footer>&copy; Copyright</footer>
 
-    </body>
+    </div>
+</body>
 
 </html>

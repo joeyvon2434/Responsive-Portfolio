@@ -1,386 +1,278 @@
-/*Main style sheet for portfolio */
-
-
-
-/* set all fonts to those listed below */
-
 * {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
 }
-
-
-/* Set headings to the fonts listed below */
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
 
-/* add in the background pattern */
-
 body {
-    position: relative;
     background-image: url("../images/escheresque/escheresque.png");
 }
 
-/* style the header bar */
-
-#header-bar {
-    z-index: 2;
-    position: fixed;
+#wrapper {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
-    height: 80px;
+    min-height: 100%;
     padding: 0;
     margin: 0;
-    border: 1px solid #cccccc;
-
 }
 
-#center-header {
-    width: 960px;
-    height: auto;
-    text-align: center;
-    background-color: #ffffff;
-    padding: 0;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#header-name {
-    background-color: #4aaaa5;
-    margin: 0;
-    width: 30%;
-    height: 36px;
-    padding: 22px 0;
-    font-size: 23px;
-    float: left;
-    color: #ffffff;
-}
-
-#nav-links{
-    float: right;
-    list-style-type: none;
-    height: auto;
-    padding: 20px 0;
-    font-size: 15px;
-}
-
-.link-items {
-    display: inline;
-    color: #777777;
-    padding: 0 5px;
-    cursor: pointer;
-
-}
-
-.link-border{
-    border-width: 0 1px 0 0;
-    border-color: #777777;
-    border-style: solid;
-}
-
-
-/*style the content sections*/
-
-section{
-    z-index: 0;
-    position: relative;
-    top: 96px;
-    width: 960px;
-    padding:0;
-    margin: 23px auto 96px auto;
-    background-color: #ffffff;
-    border-color: #dddddd;
-    border-width: 1px;
-    border-style: solid;
-}
-
-
-.content-header {
-    color: #4aaaa5;
-    margin: 20px 20px 10px 20px;
-    padding: 20px 0;
-    border-width: 0 0 1px 0;
-    border-color: #777777;
-    border-style: solid;
-}
-
-#profile-image {
-    float: left;
-    width: 250px;
-    height: auto;
-}
-
-#slogan {
+.header {
+    z-index: 2;
+    position: Fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: center;
-    padding-bottom: 10px;
-    margin: 0;
-    font-size: 20px;
-}
-
-.content{
-    line-height: 2.0;
-    margin: 10px 20px 20px 20px;
-    color: #777777;
+    height: 50px; /*use pixels and resize for each device*/
     padding: 0;
-    list-style-position: inside;
+    margin: 0;
+    background-color: #ffffff;
 }
 
-#ski-image{
-    float: right;
-    width: 450px;
-    height: auto;
-
+#displacementHeader {/*This box must be the same dimensions as the header above*/
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
 }
 
-#travel-image{
-    float: left;
-    width: 300px;
-    height: auto;
-
-}
-
-.clickable-project {
+#headerContent {/*this boxe centers the header's contet and allows scaling. use %*/
     position: relative;
-    display: inline-block;
-    width: 270px;
-    height: 180px;
+    width: 66.66%;
+    height: 50px;
     padding: 0;
-    margin: 20px;
+    margin: 0 auto;
 }
 
-.project-banners{
-    z-index: 1;
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
+#mainHeader{
+    float: left;
+    max-width: 50%;
     margin: 0;
-    width: 270px;
-    height: 40px;
-    background-color: #4aaaa5;
-    color: #ffffff;
-}
-
-.project-image{
-    position: absolute;
-    z-index: 0;
-}
-
-form {
-    color: #777777;
-    padding: 10px 20px;
-}
-
-input{
-    width: 95%;
-    height: 30px;
-    margin: 10px 0;
+    padding: 15px;/*height is set by font and padding and should be same as headerContent above total */
     font-size: 20px;
-}
-
-textarea {
-    width: 95%;
-    height: 180px;
-    margin: 10px 0;
-}
-
-button{
     background-color: #4aaaa5;
-    font-size: 18px;
-    width: 150px;
-    height: 40px;
-    margin: 0 20px 20px 20px;
     color: #ffffff;
+}
 
+#navigation {
+    float: right;
+    margin: 0;
+    padding: 17px 0;/*padding top and bottom plus font-size below equals header height*/
+}
+
+#navigation li {
+    display: inline;
+    padding: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navItem {
+    border-right: 1px solid #050505;
+}
+
+.linkItem:hover {
+    background-color: #d9e8e9;
+    color: #2a2aad;
 }
 
 
-/* Styling Footer */
 
+section {/*size this area as needed for content. It is best to set the width to % for multi-device compatability*/
+    position: relative;
+    width: 66.66%;
+    margin: 20px auto 70px auto; /*bottom margin should be set to top margin + footer height*/
+    background-color: #ffffff;
+}
 
+.sectionContent {
+    width: 100%;
+}
+
+.sectionContent h2 {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 24px;
+    color: #4aaaa5;
+    border-bottom: 1px solid #777777;
+}
+
+#pictureBox {
+    text-align: center;
+    width: 95%;
+    margin: 10px auto 10px auto;
+}
+
+.projectBox {
+    display: inline-block;
+    position: relative;
+    width: 31%;
+    min-width: 200px;
+    margin: 0.75% 0.75% 1.5% 0.75%;
+}
+
+.projectImage {
+    width: 100%;
+    margin: 0;
+}
+
+.projectBanner {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.mainContent {
+    width: 95%;
+    margin: 15px auto 0 auto ;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.mainContent img {
+    position: relative;
+    float: left;
+    max-width: 35%;
+    min-width: 200px;
+    margin: 5px 10px 0 0 ;
+    padding: 2px;
+    border: 1px solid #777777;
+    background-color: #dad8d8;
+}
+
+#ski-image {
+    float: right;
+    min-width: 200px;
+}
+
+.mainContent p {
+    padding: 5px;
+    line-height: 1.5;
+    font-size: 18px;
+
+}
+
+.mainContent p a {
+    cursor: pointer;
+    color: rgb(49, 36, 173);
+}
+
+ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.mainContent form input {
+    width: 90%;
+    height: 20px;
+    font-size: 16px;
+}
+
+.mainContent form textarea {
+    width: 90%;
+    height: 180px;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
 
 footer {
-    z-index: 2;
-    position: fixed;
-    bottom: 0;
-    left:0;
-    width: 100%;
-    height: 48px;
-    text-align: center;
-    background-color: #666666;
-    color: #ffffff;
-    border-width: 5px 0 0 0 ;
-    border-color: #4aaaa5;
-    border-style: solid;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-}
-
-.footdiv {
     position: absolute;
-    margin-top: 50px;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    width: 100%; 
+    margin: 0;
+    padding: 30px 0 6px 0 ; /*add be sure the section margin is set properly with this footer margin*/
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
 }
-
-/* 980 768 640 */
 
 @media screen and (max-width: 980px) {
-    #header-bar {
-        height: 70px;
+    #headerContent {
+    width: 90%;
+    margin: 0 auto 0 5%;
     }
 
-    #center-header {
-        height: auto;
-        text-align: center;
-        max-width: 980px;
-        width: 90%;
-        margin: 0 auto 20px 20px;
-    }
-
-    #header-name {
-        width: 35%;
-        height: 36px;
-        padding: 17px 0;
-        font-size: 20px;
-        
-    }
-
-    #nav-links{
-       
-        padding: 15px 0;
-        font-size: 15px;
-    }    
     section {
-        top: 60px;
-        width: 620px;
-        padding: 0;
-        margin: 60px auto 60px 12px;
-       
+        width: 66.66%;
+        margin: 20px auto 70px 5%;
     }
-    .clickable-project {
-        margin: 15px;
-        padding: 0px;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
-    #header-bar {
-        height: 40px;
-        position: static;
-        margin: 0;
-        padding: 0;
+    #headerContent {
+    width: 96%;
+    margin: 0 auto 0 2%;
     }
 
-    #center-header {
-        height: auto;
-        text-align: center;
-        max-width: 640px;
-        width: 95%;
-        margin: 0 auto 20px auto;
-    }
-
-    #header-name {
-        width: 35%;
-        height: 20px;
-        padding: 11px 0;
-        font-size: 18px;
-        
-    }
-
-    #nav-links{
-       
-        padding: 10px 0;
-        font-size: 12px;
-    }    
     section {
-        position: static;
-        width: 95%;
-        padding: 0;
-        margin: 10px auto 10px auto;
-       
+        width: 96%;
+        margin: 20px auto 70px 2%;
     }
-
-.clickable-project {
-    margin: 10px;
-    padding: 0px;
-}
-
-    .content-header {
-        margin: 8px 16px 8px 16px;
-        padding: 8px 0;
-        font-size: 18px;
-       
+    .mainContent form textarea {
+        height: 100px;
     }
 }
 
-@media screen and (max-width:640px) {
-    #header-bar {
-        height: 50px;
-        margin: 0;
-        padding: 0;
+@media screen and (max-width: 640px) {
+    #headerContent {
+    width: 100%;
+    margin: 0 auto 0 auto;
     }
 
-    #center-header {
-        height: auto;
+    #mainHeader{
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;/*height is set by font and padding and should be same as headerContent above total */
+        font-size: 18px;
         text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    #header-name {
-        width: 35%;
-        padding: 15px 0;
-        font-size: 12px;
-        
-    }
-
-    #nav-links{
-       
-        padding: 10px 0;
-        font-size: 12px;
-    }    
-    section {
-        top: 40px;
-        max-width: 640px;
-        width: 95%;
-        padding: 0;
-        margin: 40px auto 40px auto;
-       
-    }
-    .content-header {
-        margin: 10px 20px 10px 20px;
-        padding: 10px 0;
-        font-size: 20px;
-       
-    }
-
-    footer {
-        z-index: 2;
-        position: fixed;
-        bottom: 0;
-        left:0;
-        width: 100%;
-        height: 30px;
-        font-size: 12px;
-        margin: 0;
-        padding: 0;
     }
     
-    .footdiv {
-        position: absolute;
-        margin-top: 40px;
-        bottom: 0;
-        left: 50%;
+    #navigation {
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;/*padding top and bottom plus font-size below equals header height*/
+        font-size: 14px;
+        text-align: center;
     }
 
+    .header {
+        position: absolute;
+        height: 72px;
+    }
+
+    #displacementHeader {
+        height: 62px;
+    }
+
+    section {
+        width: 96%;
+        margin: 20px auto 70px 2%;
+    }
+    .mainContent form textarea {
+        height: 100px;
+    }
+
+    .projectBox {
+        width: 65%;
+    }
 }
