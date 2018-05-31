@@ -189,6 +189,16 @@ ol li {
     padding-bottom: 10px;
 }
 
+button{
+    background-color: #4aaaa5;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    margin: 0 20px 20px 0;
+    color: #ffffff;
+
+}
+
 footer {
     position: absolute;
     bottom: 0;
