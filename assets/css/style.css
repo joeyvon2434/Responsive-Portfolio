@@ -115,6 +115,7 @@ section {/*size this area as needed for content. It is best to set the width to 
     width: 31%;
     min-width: 200px;
     margin: 0.75% 0.75% 1.5% 0.75%;
+    cursor: pointer;
 }
 
 .projectImage {
